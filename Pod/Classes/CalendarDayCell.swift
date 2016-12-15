@@ -29,6 +29,8 @@ public class CalendarDayCell: UICollectionViewCell {
     
     public override func awakeFromNib() {
         super.awakeFromNib()
+        
+        viewSelectedCircle.layoutIfNeeded()
     
         viewSelectedCircle.backgroundColor = CalendarViewTheme.instance.colorForSelectedDate
         viewSelectedCircle.layer.cornerRadius = viewSelectedCircle.frame.width / 2
