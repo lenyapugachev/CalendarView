@@ -240,7 +240,7 @@ extension CalendarView {
     
     private func updateMonthYearViews() {
         dateFormatter.dateFormat = "LLLL"
-        labelTitle.text = dateFormatter.stringFromDate(currentFirstDayOfMonth).capitalizedString
+        labelTitle.text = dateFormatter.stringFromDate(currentFirstDayOfMonth).uppercaseString
     }
     
     private func scrollToPreviousMonth() {
